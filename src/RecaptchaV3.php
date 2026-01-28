@@ -105,7 +105,7 @@ class RecaptchaV3
     /**
      * @return string
      */
-    public function initJs($none = null)
+    public function initJs($nonce = null)
     {
         return '<script src="' . $this->origin . '/api.js?hl=' . $this->locale . '&render=' . $this->sitekey . '"' . ($nonce ? ' nonce="' . $nonce . '"' : '') . '></script>';
     }
